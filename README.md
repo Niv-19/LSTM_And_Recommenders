@@ -28,7 +28,7 @@ Before fitting the model, following processing were done: <br/>
 
 Review summaries were cleaned as mentioned above and used as the feature and sentiments (positive/negative) as target for LSTM model.
 
-### What is LSTM?
+## What is LSTM?
 LSTMs, a very special kind of Recurrent Neural Network which works, for many tasks, much better than the standard version RNN.
 
 An LSTM has three of these gates, to protect and control the cell state.
@@ -42,6 +42,7 @@ LSTMs are explicitly designed to avoid the long-term dependency problem. The key
 
 LSTM Architecture:<br/>
 ![LSTMmodel](images/LSTMarchitecture)
+
 
 ### Word Embedding
 Word Embeddings are a distributed representation for text that is perhaps one of the key breakthroughs for the impressive performance of deep learning methods on challenging NLP problems.
@@ -59,7 +60,22 @@ Different LSTM models were created using different combinations of hyper-paramet
 * Learning rate 
 * Number of Epochs
 
-Best model that was obtained was with 1 embedding layer of 70 output dim, 4 LSTMs layers with units of 100, 100, 72 and 100 respectively and 1 output Dense layer of 2 units.
+Model that was obtained was with 1 embedding layer of 70 output dim, 4 LSTM layers with units of 100, 100, 72 and 100 respectively and 1 output Dense layer of 2 units was used for 10 epochs.<br/>
+Below are the graphs for Accuracy and Loss for the above model.
+![Accuracy](images/lstmaccuracy.png
+)
+![Loss](images/lstm_loss.png
+)
+
+As per the plots above, epoch of 2 gives best result as the model starts to overfit later. Therefore, epoch of 2 is selected.
+
+The model was trained with only 2 epochs. The training accuracy obtained was 92.18% and validation accuracy was 92.74%.<br/>
+The model was tested with unseen data of 1.1M reviews and the obtained accuracy was 88.7% which is way more than accuracy obtaned by Random Forest (74.8%).
+
+## Contest Based Recommender System 
+
+
+
 
 
 
