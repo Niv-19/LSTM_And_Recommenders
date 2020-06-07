@@ -84,7 +84,7 @@ The model was tested with unseen data of 1.1M reviews and the obtained accuracy 
 ### Popular words in negative comments:
 ![Negativewords](images/word1.png)
 
-### Popular words in negative comments:
+### Popular words in positive comments:
 ![Positivewords](images/word5.png)
 
 --- 
