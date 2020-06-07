@@ -78,8 +78,8 @@ Below are the graphs for Accuracy and Loss for the above model.<br/>
 As per the plots above, epoch of 2 gives best result as the model starts to overfit later. Therefore, epoch of 2 is selected.
 
 ### Result
->The model was trained with only 2 epochs. The training accuracy obtained was **92.15%** and validation accuracy was **93%**.<br/>
-The model was tested with unseen data of 1.1M reviews and the obtained accuracy was **88.7%** which is way more than accuracy obtaned by Random Forest (74.8%).
+**The model was trained with only 2 epochs. The training accuracy obtained was **92.15%** and validation accuracy was **93%**.**<br/>
+**The model was tested with unseen data of 1.1M reviews and the obtained accuracy was **88.7%** which is way more than accuracy obtaned by Random Forest (74.8%).**
 
 ### Popular words in negative comments:
 ![Negativewords](images/word1.png)
